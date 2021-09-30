@@ -1,7 +1,7 @@
 import mysql from "mysql";
 import {MYSQL_CONFIG} from "../config/db";
 
-console.log('MYSQL_CONFIG', MYSQL_CONFIG);
+// console.log('MYSQL_CONFIG', MYSQL_CONFIG);
 
 // 1. 创建连接对象【单例模式】
 const con = mysql.createConnection(MYSQL_CONFIG);

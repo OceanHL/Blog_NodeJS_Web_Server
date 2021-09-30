@@ -6,8 +6,7 @@ const env = process.env.NODE_ENV;
 
 // 2. 根据不同的 环境变量 进行不同的配置，【导出该变量的引用，后面可以对该变量进行修改】
 export let MYSQL_CONFIG: ConnectionConfig;
-export let REDIS_CONFIG: ClientOpts;
- 
+export let REDIS_CONFIG: ClientOpts ;
 
 if (env === 'development') {
     // mysql

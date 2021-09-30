@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.escape = exports.exec = void 0;
 const mysql_1 = __importDefault(require("mysql"));
 const db_1 = require("../config/db");
-console.log('MYSQL_CONFIG', db_1.MYSQL_CONFIG);
+// console.log('MYSQL_CONFIG', MYSQL_CONFIG);
 // 1. 创建连接对象【单例模式】
 const con = mysql_1.default.createConnection(db_1.MYSQL_CONFIG);
 // 2. 开始连接

@@ -28,7 +28,7 @@ export const handleUserRouter: MyRequestListener<ReturnType, BodyType> = (req, r
                     // 有该属性就覆盖为新的，没有就设置
                     req.session.username = userInfo.username;
                     req.session.realname = userInfo.realname;
-                    setSession(req.sessionID, req.session);
+                    setSession(req.sessionID!, req.session);
                 }
                 console.log('session: ', req.session);
                 return new SuccessModel();

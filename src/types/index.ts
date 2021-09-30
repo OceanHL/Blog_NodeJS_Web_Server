@@ -6,7 +6,7 @@ export interface MyIncomingMessage extends IncomingMessage {
     query?: ParsedUrlQuery;
     cookie?: { [key: string]: string };
     session?: { [key: string]: any };
-    sessionID: string;
+    sessionID?: string;
 }
 export type MyRequestListener<ReturnType, BodyType = any> = (
     req: MyIncomingMessage & { body?: BodyType },

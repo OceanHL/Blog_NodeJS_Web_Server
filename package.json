@@ -1,0 +1,26 @@
+{
+  "name": "blog-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/bin/www.ts",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon src/bin/www.ts",
+    "pro": "cross-env NODE_ENV=production nodemon src/bin/www.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/mysql": "^2.15.19",
+    "@types/node": "^16.9.6",
+    "@types/redis": "^2.8.32",
+    "cross-env": "^7.0.3",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.12",
+    "redis": "^3.1.2",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3",
+    "xss": "^1.0.9"
+  }
+}
